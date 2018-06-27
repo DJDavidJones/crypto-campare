@@ -1,0 +1,206 @@
+.App {
+  text-align: center;
+  font-family: "Courier New", monospace;
+}
+
+
+.more {
+  float: right;
+  font-size: 32px;
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 10px 25px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 100%;
+}
+
+
+.more:hover {
+  background-color: #33C3F0;
+}
+.more:active {
+  background-color: #33C3F0;
+}
+
+label{
+  color: #eee;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #3C3B45;
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+input[type]{
+  margin-right: 4px;
+}
+.button-primary:disabled{
+  background-color: #25242B !important;
+}
+/*/*/
+
+.coin-container{
+  background-color: #ccc;
+
+  text-align: left;
+
+  padding: 16px 16px 16px 16px;
+  margin-bottom: 24px;
+  position: relative;
+  //width: 200px;
+
+  border-radius: 6px;
+}
+.coin-container h1{
+  color: #686576;
+}
+.coin-container h3{
+  text-align: center;
+  color: white;
+}
+.coin-container p{
+  color: #686576;
+  font-size: 1.7rem;
+
+  margin-left: 8px;
+}
+/*/*/
+
+.expand-btn-container{
+  text-align: center;
+}
+
+.expand{
+  display: none;
+}
+/*/*/
+
+#coin-total {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 24px;
+}
+/*/*/
+
+.red {
+  color: #f44336;
+}
+.b-red {
+  border-color: red;
+}
+
+.green {
+  color: #4caf50;
+}
+
+.white-f {
+  color: white;
+}
+
+.cross {
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  background: white;
+  border-radius: 25px;
+  width: 24px;
+  border: 1px solid black;
+  cursor:pointer;
+}
+.cross > span {
+  margin-left: 7px;
+}
+.cross:hover {
+  background-color: #33C3F0;
+}
+.cross:active {
+  background-color: #33C3F0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  z-index: 99;
+  left: 47%;
+  top:48%;
+}
+@media screen and (max-width: 760px)  {
+  .spinner {
+    left: 35%;
+    top:40%;
+  }
+}
+.spinner:after{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 99;
+  border-radius: 15px;
+  padding: 65px 15px 15px 15px;
+}
+.spinner:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.7);
+  z-index: 98;
+}
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 14px;
+  left: 27px;
+  z-index: 100;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}

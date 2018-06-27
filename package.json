@@ -1,0 +1,21 @@
+{
+  "name": "COMPARE",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.15.3",
+    "mongoose": "^5.1.6"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "client": "node start-client.js",
+    "start:dev": "concurrently \"npm run start\" \"npm run client\"",
+    "heroku-postbuild": "cd client && yarn && yarn run build"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0"
+  }
+}
